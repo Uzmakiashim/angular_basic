@@ -1,0 +1,43 @@
+<h5 class ="explanation">
+    using *ngFor to loop through an array of items, syntax: *ngFor="let item of items" //arry =items and each object being saved in item
+</h5>
+<div id = "list_item">
+  <ul *ngFor="let item of items"> 
+  {{item.name}}
+  {{item.price}}
+  {{item.shop}} 
+  </ul>
+</div>
+<h5 class="explanation">
+  using [(ngModel)] to link the assigned variable with the input (as the component has the var name it is assigned to the components)
+</h5>
+<form action="submit" id="add_item" >
+  Item name :<input type="text" placeholder="items to add...." [(ngModel)]="item_name" name="item_name">
+  Item price:<input type="text" placeholder ="price..." [(ngModel)]="price" name="price">
+  Shop name :<input type="text" placeholder="shop name..." [(ngModel)]="shop_name" name="shop_name">
+  <button (click) ="addTodo()" id="submit_button">Submit</button>
+</form>
+<p *ngIf="violated===true">
+  Cannot enter string for price !!!
+  <br>
+</p>
+<div class ="explanation" *ngIf="violated===true">
+    using *ngIf = "condition" we checked whether the condition was violated or not
+    <br>
+    proper syntax:  &lt;*ngIf="violated===true"&gt;
+  
+</div>
+
+<div class="explanation" id="http_def">
+  promises: when something cannont be done at that instance but it promise to run the function you allocated "once"
+  <br>
+  example: when a browser is trying to get data from server but cannot load it then it makes a promise to get back to the line of code
+  <br>
+  observable: Similar to promise but in this case it waits for a reaction and loads a function when receiving data again and again
+  <br>
+  getting data from server: http.post
+  positing data on server: http.put
+  <br>
+  Syntax:
+
+</div>

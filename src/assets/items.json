@@ -1,0 +1,27 @@
+[
+    {
+        "name": "potatoes",
+        "shop": "any",
+        "price": "10"
+    },
+    {
+        "name": "onions",
+        "shop": "any",
+        "price": "5"
+    },
+    {
+        "name": "hair-gel",
+        "shop": "Welcome",
+        "price": "4"
+    },
+    {
+        "name": "charger",
+        "shop": "electronics",
+        "price": "5"
+    },
+    {
+        "name": "chocolate",
+        "shop": "any",
+        "price": "3"
+    }
+]
