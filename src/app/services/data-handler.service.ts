@@ -23,11 +23,11 @@ export class DataHandlerService {
   }
 
   getJSON(): Observable<any> {
-    return this.http.get("assets/items.json");
+    return this.http.get("http://localhost:3000/getitems");
   }
 
   postJSON(items:Item[]):Observable<any>{
-    return this.http.post("assets/items.json",items,httpOptions);
+    return this.http.post("http://localhost:3000/additem",items,httpOptions);
   }
 
 }

@@ -1,16 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const fs = require('fs');
 const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get("/getitems", (req, res) => {
     let data;
     fs.readFile('items.json', "utf-8", (err, d) => {
         data = d;
         console.log(d);
+        console.log("res");
         res.end(d);
     });
 });
